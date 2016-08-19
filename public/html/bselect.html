@@ -4,23 +4,28 @@
 <head>
     <title>Burrito Me Crazy</title>
     <link rel="stylesheet" href="../css/bselect.css">
-
-    <body ng-controller="BurritoController as burr">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
+    <body ng-controller="orderController as oCtrl">
         <div class="nav-bar">
             <ul>
-                <li><a class="active" href="./home.html">Home</a></li>
+                <li><a class="active" href="/">Home</a></li>
             </ul>
         </div>
 
         <div class="intro-header">
             <div class="container">
                 <div class="intro-message">
-                    <h6> When you find that perfect bite of burrito the heavens align, choirs of angels begin to sing, the sky opens up and pours fourth bright light, and the whole of creation becomes a singularity with your taste buds.</h6>
+                    <h3> When you find that perfect bite of burrito the heavens align, choirs of angels begin to sing, the sky opens up and pours fourth bright light, and the whole of creation becomes a singularity with your taste buds.</h3>
                     <div class="customerDiv">
                         <form class="customerInfo">
-                            <ul>
-                            </ul>
-                            <a href="#" class="btn btn-success btn-md"><span class="glyphicon glyphicon-ok"></span> Confirm Order</a>
+                            <div class="orderConfirmBox">
+                             <h1> {{ oCtrl.chosenBurrito }} has been choosen.</h1>
+                            </div>
+                            <!-- <a href="#" class="btn btn-success btn-md"><span class="glyphicon glyphicon-ok"></span> Confirm Order</a> -->
                         </form>
                     </div>
                 </div>
