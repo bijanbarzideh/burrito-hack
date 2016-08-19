@@ -70,3 +70,7 @@ body{
 .modal-open{
   padding:0px !important;
 }
+
+.customerInfo li{
+  list-style-type: none ;
+}

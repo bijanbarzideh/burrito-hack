@@ -61,3 +61,6 @@ html {
     text-shadow: 2px 2px 3px black;
     text-decoration: underline;;
 }
+.customerInfo ul{
+  list-style-type: none !important;
+}
